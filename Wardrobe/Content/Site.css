@@ -1,5 +1,7 @@
 ﻿* {
     color: #ff7289;
+    font-family: 'Amaranth', sans-serif !important;
+    /*Has to be important. h1-h6 are a different font otherwise*/
 }
 
 /*The anchor tag is up high so it can be overriden when needed*/
@@ -55,6 +57,10 @@ textarea {
 /*Wouldn't override otherwise*/
 .navbar-brand, li a {
     color: #ff7289 !important;
+}
+
+.navbar-nav li a {
+    transition: all 0.3s ease-in-out;
 }
 
 .thumbnail, .btn {
