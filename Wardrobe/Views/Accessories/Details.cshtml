@@ -28,10 +28,10 @@
         <h4>
             <b>@Html.DisplayNameFor(model => model.Occasion):</b> @Html.DisplayFor(model => model.Occasion)
         </h4>
+        <div class="btn-group" role="group">
+            <a href=@Url.Action("Edit", "Accessories", new { id = Model.AccessoriesID }) class="btn btn-default">Edit</a>
+            <a href=@Url.Action("Delete", "Accessories", new { id = Model.AccessoriesID }) class="btn btn-default">Delete</a>
+            <a href="~/Accessories" class="btn btn-default">Back to List</a>
+        </div>
     </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.AccessoriesID }) |
-    @Html.ActionLink("Delete", "Delete", new { id = Model.AccessoriesID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

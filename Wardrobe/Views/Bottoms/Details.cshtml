@@ -33,10 +33,10 @@
         <h4>
             <b>@Html.DisplayNameFor(model => model.Waist):</b> @Html.DisplayFor(model => model.Waist)
         </h4>
+        <div class="btn-group" role="group">
+            <a href=@Url.Action("Edit", "Bottoms", new { id = Model.BottomID }) class="btn btn-default">Edit</a>
+            <a href=@Url.Action("Delete", "Bottoms", new { id = Model.BottomID }) class="btn btn-default">Delete</a>
+            <a href="~/Bottoms" class="btn btn-default">Back to List</a>
+        </div>
     </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
-    @Html.ActionLink("Delete", "Delete", new { id = Model.BottomID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

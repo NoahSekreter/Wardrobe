@@ -30,11 +30,10 @@
         <h4>
             <b>@Html.DisplayNameFor(model => model.Size):</b> @Html.DisplayFor(model => model.Size)
         </h4>
+        <div class="btn-group" role="group">
+            <a href=@Url.Action("Edit", "Tops", new { id = Model.TopID }) class="btn btn-default">Edit</a>
+            <a href=@Url.Action("Delete", "Tops", new { id = Model.TopID }) class="btn btn-default">Delete</a>
+            <a href="~/Tops" class="btn btn-default">Back to List</a>
+        </div>
     </div>
 </div>
-
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Delete", "Delete", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

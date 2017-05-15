@@ -33,8 +33,8 @@
     </div>
 </div>
 
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
-    @Html.ActionLink("Delete", "Delete", new { id = Model.OutfitID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+<div class="btn-group" role="group">
+    <a href=@Url.Action("Edit", "Outfits", new { id = Model.OutfitID }) class="btn btn-default">Edit</a>
+    <a href=@Url.Action("Delete", "Outfits", new { id = Model.OutfitID }) class="btn btn-default">Delete</a>
+    <a href="~/Outfits" class="btn btn-default">Back to List</a>
+</div>

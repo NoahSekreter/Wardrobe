@@ -74,12 +74,17 @@ textarea {
     color: #ee6176;
 }
 
+.btn-group {
+    margin-top: 10px;
+}
+
 .btn:hover {
     color: #8f1023;
+    transition: all 0.3s ease-in-out;
 }
 
 .cozy {
-    padding: 10px 0 20px 0;
+    padding: 10px 0 10px 0;
 }
 
 .spacing-bottom {
