@@ -7,25 +7,25 @@
 @* Displays the image with the name on the bottom. They each take you to the respective item *@
 
 <div class="row cozy">
-    <div class="col-md-3">
+    <div class="col-sm-6 col-md-3 spacing-bottom">
         <a href="@Url.Action("Details","Accessories", new { id=Model.AccessoriesID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Accessory.Name)</h4>
             <img src=@Url.Content(Model.Accessory.Image) class="detail-image-sm">
         </a>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-6 col-md-3 spacing-bottom">
         <a href="@Url.Action("Details","Tops", new { id=Model.TopID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Top.Name)</h4>
             <img src=@Url.Content(Model.Top.Image) class="detail-image-sm">
         </a>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-6 col-md-3 spacing-bottom">
         <a href="@Url.Action("Details","Bottoms", new { id=Model.BottomID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Bottom.Name)</h4>
             <img src=@Url.Content(Model.Bottom.Image) class="detail-image-sm">
         </a>
     </div>
-    <div class="col-md-3">
+    <div class="col-sm-6 col-md-3 spacing-bottom">
         <a href="@Url.Action("Details","Shoes", new { id=Model.ShoesID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Sho.Name)</h4>
             <img src=@Url.Content(Model.Sho.Image) class="detail-image-sm">
