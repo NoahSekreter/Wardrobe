@@ -15,8 +15,7 @@
 {
     <div class="col-xs-6 col-md-4">
         <a href="@Url.Action("Details","Tops", new { id=item.TopID })" class="thumbnail">
-            @*<img src=@Html.DisplayFor(modelItem => item.Image)>*@
-            <img src="~/Content/Images/magic_shirt.jpg" />
+            <img src=@Url.Content(item.Image)>
             <h2>@Html.DisplayFor(modelItem => item.Name)</h2>
             <p>@Html.DisplayFor(modelItem => item.Type)</p>
         </a>

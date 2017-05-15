@@ -8,25 +8,25 @@
     <div class="col-md-3">
         <a href="@Url.Action("Details","Accessories", new { id=Model.AccessoriesID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Accessory.Name)</h4>
-            <img src="~/Content/Images/watermelon_hat.jpg" class="detail-image-sm"/>
+            <img src=@Url.Content(Model.Accessory.Image) class="detail-image-sm">
         </a>
     </div>
     <div class="col-md-3">
         <a href="@Url.Action("Details","Tops", new { id=Model.TopID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Top.Name)</h4>
-            <img src="~/Content/Images/magic_shirt.jpg" class="detail-image-sm" />
+            <img src=@Url.Content(Model.Top.Image) class="detail-image-sm">
         </a>
     </div>
     <div class="col-md-3">
         <a href="@Url.Action("Details","Bottoms", new { id=Model.BottomID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Bottom.Name)</h4>
-            <img src="~/Content/Images/Thorsberg_Trousers.jpg" class="detail-image-sm" />
+            <img src=@Url.Content(Model.Bottom.Image) class="detail-image-sm">
         </a>
     </div>
     <div class="col-md-3">
         <a href="@Url.Action("Details","Shoes", new { id=Model.ShoesID})" class="thumbnail">
             <h4>@Html.DisplayFor(model => model.Sho.Name)</h4>
-            <img src="~/Content/Images/pointy_shoe.jpg" class="detail-image-sm" />
+            <img src=@Url.Content(Model.Sho.Image) class="detail-image-sm">
         </a>
     </div>
 </div>
