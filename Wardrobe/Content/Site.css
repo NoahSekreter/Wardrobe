@@ -1,12 +1,4 @@
-﻿/*
-    Color Palette:
-    #ffbfca - Light pink
-    #ff7289 - Dark pink
-
-*/
-
-* {
-    /*font-family: 'Amaranth', sans-serif !important;*/
+﻿* {
     color: #ff7289;
 }
 
@@ -60,6 +52,7 @@ textarea {
     color: #8f1023;
 }
 
+/*Wouldn't override otherwise*/
 .navbar-brand, li a {
     color: #ff7289 !important;
 }
@@ -79,6 +72,11 @@ textarea {
     color: #8f1023;
 }
 
+.cozy {
+    padding: 20px 0 20px 0;
+}
+
+/*For the images in the details*/
 .detail-image {
     max-width: 400px;
     max-height: 600px;
@@ -88,8 +86,4 @@ textarea {
     max-width: 250px;
     max-height: 300px;
     padding-bottom: 20px;
-}
-
-.cozy {
-    padding: 20px 0 20px 0;
 }
