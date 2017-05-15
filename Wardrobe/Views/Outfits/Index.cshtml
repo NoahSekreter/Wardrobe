@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Wardrobe.Models.Outfit>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Outfits</h2>
+
+<h4>
+    @Html.ActionLink("Add New Outfit", "Create")
+</h4>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <a href="@Url.Action("Details","Outfits", new { id=item.OutfitID })" class="thumbnail">
+                <h4>@Html.DisplayFor(modelItem => item.Top.Name)</h4>
+                <h4>@Html.DisplayFor(modelItem => item.Bottom.Name)</h4>
+                <h4>@Html.DisplayFor(modelItem => item.Sho.Name)</h4>
+                <h4>@Html.DisplayFor(modelItem => item.Accessory.Name)</h4>
+            </a>
+        </div>
+    </div>
+}

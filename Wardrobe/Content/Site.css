@@ -1,0 +1,95 @@
+﻿/*
+    Color Palette:
+    #ffbfca - Light pink
+    #ff7289 - Dark pink
+
+*/
+
+* {
+    /*font-family: 'Amaranth', sans-serif !important;*/
+    color: #ff7289;
+}
+
+/*The anchor tag is up high so it can be overriden when needed*/
+a {
+    color: #ee6176;
+}
+a:hover {
+    text-decoration: none;
+    color: #8f1023;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #fd00fa;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Custom Styles*/
+
+.container {
+    background-color: #77011e;
+}
+
+.navbar .container {
+    background-color: #560000;
+}
+
+.jumbotron {
+    background-image: url('Images/deadpool.jpg');
+    color: #8f1023;
+}
+
+.navbar-brand, li a {
+    color: #ff7289 !important;
+}
+
+.thumbnail, .btn {
+    background-color: #ffbfca;
+    border: 3px solid #ee6176;
+    color: #ee6176;
+    text-align: center;
+}
+.thumbnail:hover {
+    text-decoration: none;
+    color: #ee6176;
+}
+
+.btn:hover {
+    color: #8f1023;
+}
+
+.detail-image {
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.detail-image-sm {
+    max-width: 250px;
+    max-height: 300px;
+    padding-bottom: 20px;
+}
+
+.cozy {
+    padding: 20px 0 20px 0;
+}

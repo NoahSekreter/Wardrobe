@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Wardrobe.Models.Accessory>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Accessories</h2>
+
+<h4>
+    @Html.ActionLink("Add New Accessory", "Create")
+</h4>
+
+<div class="row">
+@foreach (var item in Model)
+{
+    <div class="col-xs-6 col-md-4">
+        <a href="@Url.Action("Details","Accessories", new { id=item.AccessoriesID })" class="thumbnail">
+            <img src="~/Content/Images/watermelon_hat.jpg" />
+            @*<img src=@Html.DisplayFor(modelItem => item.Image)>*@
+            <h2>@Html.DisplayFor(modelItem => item.Name)</h2>
+            <p>@Html.DisplayFor(modelItem => item.Type)</p>
+        </a>
+    </div>
+}
+</div>

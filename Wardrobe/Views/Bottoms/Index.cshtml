@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Wardrobe.Models.Bottom>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Bottoms</h2>
+
+<h4>
+    @Html.ActionLink("Add New Bottom", "Create")
+</h4>
+
+<div class="row">
+@foreach (var item in Model)
+{
+    <div class="col-xs-6 col-md-4">
+        <a href="@Url.Action("Details","Bottoms", new { id=item.BottomID })" class="thumbnail">
+            @*<img src=@Html.DisplayFor(modelItem => item.Image)>*@
+            <img src="~/Content/Images/Thorsberg_Trousers.jpg" />
+            <h2>@Html.DisplayFor(modelItem => item.Name)</h2>
+            <p>@Html.DisplayFor(modelItem => item.Type)</p>
+        </a>
+    </div>
+}
+</div>
