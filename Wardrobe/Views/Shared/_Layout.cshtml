@@ -7,6 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Amaranth" rel="stylesheet">
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @* Script won't work unless jquery is here. I thought MVC comes included with jquery,
+       so I'm unsure why it wouldn't work without it *@
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="~/Scripts/Script.js"></script>
 </head>
 <body>
     <div class="navbar navbar-fixed-top">

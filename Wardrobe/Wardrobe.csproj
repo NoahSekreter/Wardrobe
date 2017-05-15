@@ -178,6 +178,7 @@
     <Content Include="Content\Images\magic_shirt.jpg" />
     <Content Include="Content\Images\pointy_shoe.jpg" />
     <Content Include="Content\Images\robes.JPG" />
+    <Content Include="Content\Images\sparkly.JPG" />
     <Content Include="Content\Images\Thorsberg_Trousers.jpg" />
     <Content Include="Content\Images\watermelon_hat.jpg" />
     <Content Include="favicon.ico" />
@@ -214,6 +215,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Script.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
