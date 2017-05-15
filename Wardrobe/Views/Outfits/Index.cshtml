@@ -12,16 +12,16 @@
 
 @* Display all the names of the things in the set *@
 
+<div class="row">
 @foreach (var item in Model)
 {
-    <div class="row">
-        <div class="col-xs-6 col-md-4">
-            <a href="@Url.Action("Details","Outfits", new { id=item.OutfitID })" class="thumbnail">
-                <h4>@Html.DisplayFor(modelItem => item.Top.Name)</h4>
-                <h4>@Html.DisplayFor(modelItem => item.Bottom.Name)</h4>
-                <h4>@Html.DisplayFor(modelItem => item.Sho.Name)</h4>
-                <h4>@Html.DisplayFor(modelItem => item.Accessory.Name)</h4>
-            </a>
-        </div>
+    <div class="col-xs-6 col-md-4">
+        <a href="@Url.Action("Details","Outfits", new { id=item.OutfitID })" class="thumbnail">
+            <h4>@Html.DisplayFor(modelItem => item.Top.Name)</h4>
+            <h4>@Html.DisplayFor(modelItem => item.Bottom.Name)</h4>
+            <h4>@Html.DisplayFor(modelItem => item.Sho.Name)</h4>
+            <h4>@Html.DisplayFor(modelItem => item.Accessory.Name)</h4>
+        </a>
     </div>
 }
+</div>

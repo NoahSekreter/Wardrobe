@@ -8,31 +8,27 @@
 
 <hr />
 
-<div>
-    <div class="row cozy">
-        <div class="col-md-6">
-            <img src=@Url.Content(Model.Image) class="detail-image">
-        </div>
-        <div class="col-md-6">
-            <h4>
-                Details
-            </h4>
-            <p>
-                <b>@Html.DisplayNameFor(model => model.Type):</b> @Html.DisplayFor(model => model.Type)
-            </p>
-            <p>
-                <b>@Html.DisplayNameFor(model => model.Color):</b> @Html.DisplayFor(model => model.Color)
-            </p>
-            <p>
-                <b>@Html.DisplayNameFor(model => model.Season):</b> @Html.DisplayFor(model => model.Season)
-            </p>
-            <p>
-                <b>@Html.DisplayNameFor(model => model.Occasion):</b> @Html.DisplayFor(model => model.Occasion)
-            </p>
-            <p>
-                <b>@Html.DisplayNameFor(model => model.Size):</b> @Html.DisplayFor(model => model.Size)
-            </p>
-        </div>
+<div class="row cozy">
+    <div class="col-md-6">
+        <img src=@Url.Content(Model.Image) class="detail-image">
+    </div>
+    <div class="col-md-6">
+        <h1>Details</h1>
+        <h4>
+            <b>@Html.DisplayNameFor(model => model.Type):</b> @Html.DisplayFor(model => model.Type)
+        </h4>
+        <h4>
+            <b>@Html.DisplayNameFor(model => model.Color):</b> @Html.DisplayFor(model => model.Color)
+        </h4>
+        <h4>
+            <b>@Html.DisplayNameFor(model => model.Season):</b> @Html.DisplayFor(model => model.Season)
+        </h4>
+        <h4>
+            <b>@Html.DisplayNameFor(model => model.Occasion):</b> @Html.DisplayFor(model => model.Occasion)
+        </h4>
+        <h4>
+            <b>@Html.DisplayNameFor(model => model.Size):</b> @Html.DisplayFor(model => model.Size)
+        </h4>
     </div>
 </div>
 <p>
